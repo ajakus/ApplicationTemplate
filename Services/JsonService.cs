@@ -11,7 +11,6 @@ namespace ApplicationTemplate.Services;
 /// </summary>
 public class JsonService : IJsonService
 {
-    
 
-    
+
 }

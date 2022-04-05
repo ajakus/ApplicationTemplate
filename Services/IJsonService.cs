@@ -8,8 +8,7 @@ namespace ApplicationTemplate.Services
 {
     public abstract class IJsonService 
     {
-        public abstract string Read();
-        public abstract string Write();
+        
         
     }
 }

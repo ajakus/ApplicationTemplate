@@ -101,6 +101,7 @@ public class FileService : IFileService
                 int idx = line.IndexOf('"');
                 if (idx == -1)
                 {
+                    string ao = "video";
                     
                     string[] movieDetails = line.Split(',');
                     video.mediaId = UInt64.Parse(movieDetails[0]);
@@ -109,6 +110,7 @@ public class FileService : IFileService
                     video.Duration = TimeSpan.Parse(movieDetails[3]);
                     video.Regions = movieDetails[4].Split('|').ToList();
                     video.Genres = movieDetails[5].Split('|').ToList();
+                    
 
                 }
 
