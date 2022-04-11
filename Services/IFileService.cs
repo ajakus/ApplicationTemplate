@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace ApplicationTemplate.Services;
 
@@ -8,6 +9,8 @@ namespace ApplicationTemplate.Services;
 /// </summary>
 public interface IFileService
 {
+
+    
     public string movieFilePath { get; set; }
     public string showFilePath { get; set; }
     public string videoFilePath { get; set; }
@@ -19,7 +22,6 @@ public interface IFileService
 
     public List<Video> Videos { get; set; }
 
-
-
+    
 
 }

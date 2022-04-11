@@ -8,13 +8,14 @@ namespace ApplicationTemplate.Services;
 /// </summary>
 public class MainService : IMainService
 {
-    private readonly IFileService _fileService;
-
-     
-    
-
+    private IJsonService _iJsonServicej = new JsonService();
     public void Invoke()
     {
+        Console.WriteLine("Read and write");
+        _iJsonServicej.Write();
+       // _iJsonServicej.Read(string json);
+
+        /*
         var combiner = new CombinerService();
 
         Console.WriteLine("Enter search string: ");
@@ -22,8 +23,9 @@ public class MainService : IMainService
         var results = combiner.SearchAllMedia(searchString);
 
         results.ForEach(Console.WriteLine);
+        Console.WriteLine(results);
 
-
+        */
 
 
 
@@ -41,6 +43,7 @@ public class MainService : IMainService
             {
                 media = new Movie();
                 media.Display();
+
                 
             }
             else if (choice1 == "2")

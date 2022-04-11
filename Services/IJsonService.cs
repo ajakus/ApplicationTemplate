@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace ApplicationTemplate.Services
 {
-    public abstract class IJsonService 
+    public interface IJsonService
     {
-        
-        
+        public string Write();
+
+        public void Read(string json);
+
+
     }
 }

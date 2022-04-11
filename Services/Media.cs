@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationTemplate.Services
 {
-    public abstract class Media 
+    public abstract class Media
     {
         public UInt64 mediaId { get; set; }
 
