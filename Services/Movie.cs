@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NLog;
 
 namespace ApplicationTemplate.Services
 {
@@ -11,9 +12,9 @@ namespace ApplicationTemplate.Services
     {
         public List<string> Genres { get; set; }
 
-        private FileService _fileService;
+        public FileService _fileService = new FileService();
 
-        
+
         public override string Display()
         {
 

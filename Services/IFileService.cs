@@ -9,7 +9,7 @@ namespace ApplicationTemplate.Services;
 /// </summary>
 public interface IFileService
 {
-
+    
     
     public string movieFilePath { get; set; }
     public string showFilePath { get; set; }

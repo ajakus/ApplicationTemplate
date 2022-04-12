@@ -11,11 +11,11 @@ public class MainService : IMainService
     private IJsonService _iJsonServicej = new JsonService();
     public void Invoke()
     {
-        Console.WriteLine("Read and write");
+      /*  Console.WriteLine("Read and write");
         _iJsonServicej.Write();
        // _iJsonServicej.Read(string json);
-
-        /*
+ */
+        
         var combiner = new CombinerService();
 
         Console.WriteLine("Enter search string: ");
@@ -25,7 +25,7 @@ public class MainService : IMainService
         results.ForEach(Console.WriteLine);
         Console.WriteLine(results);
 
-        */
+       
 
 
 

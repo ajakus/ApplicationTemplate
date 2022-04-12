@@ -30,12 +30,12 @@ public class FileService : IFileService
 
 
 
-    public FileService(string MovieFilePath, string ShowFilePath, string VideoFilePath)
+    public FileService()
     {
         
-        movieFilePath = "movies.csv";
+        movieFilePath = "C:/Users/jakus/Downloads/A8-movie-main/A8-movie-main/movies.csv";
         Movies = new List<Movie>();
-        showFilePath = "Shows.csv";
+        showFilePath = "C:/Users/jakus/Downloads/A8-movie-main/A8-movie-main/shows.csv";
         Shows = new List<Show>();
         videoFilePath = "videos.csv";
         Videos = new List<Video>();
